@@ -1,3 +1,11 @@
+/**
+ * Main menu for the scripts 
+ * Current Status: Base buttons work(send to sub menus)
+ * 				   Sub Buttons work, written samps takes you to same written 
+ * 				   samps same with video samps
+ * 				   Tab buttons only change BG's dont pass any data
+ */
+
 package com.example.lifeappnolibs;
 
 import android.os.Bundle;
