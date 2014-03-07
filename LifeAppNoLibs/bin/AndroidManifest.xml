@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lifeappnolibs"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.lifeappnolibs.Scripts_home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.DeparturesScript"
+            android:label="@string/title_activity_departures_script" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.DisagreementsScript"
+            android:label="@string/title_activity_disagreements_script" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.DosAndDontsScript"
+            android:label="@string/title_activity_dos_and_donts_script" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.GreetingsScript"
+            android:label="@string/title_activity_greetings_script" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Life App No Libs</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="greetings_button">Greetings</string>
+    <string name="departures_button">Departures</string>
+    <string name="disagreements_button">Handling Disagreements</string>
+    <string name="dos_and_donts_button">Conversation Dos and Donts</string>
+    <string name="scripts_home_title">Scripts</string>
+    <string name="family_sub_cat">Family</string>
+    <string name="friends_sub_cat">Friends</string>
+    <string name="new_people_sub_cat">New People</string>
+    <string name="professionals_sub_cat">Professionals</string>
+    <string name="script_sample_text">Written Samples</string>
+    <string name="video_sample_text">Videos</string>
+    <string name="title_activity_departures_script">Departures Script</string>
+    <string name="title_activity_disagreements_script">Disagreements Script</string>
+    <string name="title_activity_dos_and_donts_script">Dos And Donts Script</string>
+    <string name="title_activity_greetings_script">Greetings Script</string>
+
+</resources>
