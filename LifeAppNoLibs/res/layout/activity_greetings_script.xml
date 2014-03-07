@@ -65,7 +65,7 @@
                 android:weightSum = "2">
                 
                 <Button
-                    android:id="@+id/scripts_button"
+                    android:id="@+id/written_samples"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

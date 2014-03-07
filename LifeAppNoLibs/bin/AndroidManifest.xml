@@ -38,6 +38,10 @@
             android:name="com.example.lifeappnolibs.GreetingsScript"
             android:label="@string/title_activity_greetings_script" >
         </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.WrittenSamples"
+            android:label="@string/title_activity_written_samples" >
+        </activity>
     </application>
 
 </manifest>
