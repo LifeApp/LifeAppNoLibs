@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ImageView;
 
 public class DeparturesScript extends Activity implements OnClickListener {
 	
@@ -25,6 +26,18 @@ public class DeparturesScript extends Activity implements OnClickListener {
 		
 		Button videoSampButton = (Button) findViewById(R.id.video_samples);
 		videoSampButton.setOnClickListener(this);
+		
+		Button familyButton = (Button) findViewById(R.id.family_button);
+		familyButton.setOnClickListener(this);
+		
+		Button friendsButton = (Button) findViewById(R.id.friends_button);
+		friendsButton.setOnClickListener(this);
+		
+		Button newPeopleButton = (Button) findViewById(R.id.new_people_button);
+		newPeopleButton.setOnClickListener(this);
+		
+		Button professionalsButton = (Button) findViewById(R.id.professionals_button);
+		professionalsButton.setOnClickListener(this);
 	}
 
 	@Override
@@ -37,6 +50,7 @@ public class DeparturesScript extends Activity implements OnClickListener {
 	public void onClick(View theView)
 	{
 		int id = theView.getId();
+		ImageView departuresBG = (ImageView) findViewById(R.id.departures_background);
 		if (id == R.id.written_samples)
 		{
 			Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
@@ -48,6 +62,27 @@ public class DeparturesScript extends Activity implements OnClickListener {
 			Intent videoIntent = new Intent(this,VideoSamples.class);
 			startActivity(videoIntent);
 		}
+		else if (id == R.id.family_button) 
+		{
+			
+			departuresBG.setImageResource(R.drawable.family);
+		}
+		else if (id == R.id.friends_button) 
+		{
+			
+			departuresBG.setImageResource(R.drawable.friends);
+
+		}
+		else if (id == R.id.new_people_button) 
+		{
+			departuresBG.setImageResource(R.drawable.new_people);
+
+		}
+		else if (id == R.id.professionals_button) 
+		{
+			departuresBG.setImageResource(R.drawable.professionals);
+
+		}	
 		
 	}
 }

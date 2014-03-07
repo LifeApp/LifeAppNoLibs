@@ -6,16 +6,20 @@
     android:weightSum="2" >
     <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_weight="1"
-        android:orientation="vertical" >
+        android:orientation="vertical"
+        android:background = "@color/main_background" >
         
         <ImageView
             android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
+            android:layout_height="wrap_content"    
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
+    		android:adjustViewBounds="true"                    
             android:contentDescription="@+string/conversation_dos_and_donts_picture"
             android:background="@drawable/dos_and_donts">            
-        </ImageView>
+        </ImageView>        
         
      </LinearLayout>        
     <RelativeLayout

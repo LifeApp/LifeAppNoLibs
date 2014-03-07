@@ -63,5 +63,4 @@
             android:label="@string/title_activity_content" >
         </activity>
     </application>
-
 </manifest>
