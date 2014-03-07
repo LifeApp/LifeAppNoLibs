@@ -21,5 +21,13 @@
     <string name="title_activity_greetings_script">Greetings Script</string>
     <string name="title_activity_written_samples">Written Samples</string>
     <string name="title_activity_video_samples">Video Samples</string>
+    <string name="asking_questions_button">Asking Questions</string>
+    <string name="active_listening_button">Active Listening</string>
+    <string name="volume_button">Volume</string>
+    <string name="content_button">Content</string>
+    <string name="title_activity_asking_questions">Asking Questions</string>
+    <string name="title_activity_active_listening">Active Listening</string>
+    <string name="title_activity_volume">Volume</string>
+    <string name="title_activity_content">Content</string>
 
 </resources>

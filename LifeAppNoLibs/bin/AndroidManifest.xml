@@ -46,6 +46,22 @@
             android:name="com.example.lifeappnolibs.VideoSamples"
             android:label="@string/title_activity_video_samples" >
         </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.AskingQuestions"
+            android:label="@string/title_activity_asking_questions" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.ActiveListening"
+            android:label="@string/title_activity_active_listening" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.Volume"
+            android:label="@string/title_activity_volume" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.Content"
+            android:label="@string/title_activity_content" >
+        </activity>
     </application>
 
 </manifest>

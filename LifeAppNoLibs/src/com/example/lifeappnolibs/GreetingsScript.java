@@ -50,5 +50,4 @@ public class GreetingsScript extends Activity implements OnClickListener{
 		}
 		
 	}
-
 }

@@ -60,13 +60,6 @@ public class Scripts_home extends Activity implements OnClickListener {
 			Intent dosAndDontsIntent = new Intent(this,DosAndDontsScript.class);
 			startActivity(dosAndDontsIntent);
 		}
-		/*
-		else if( id == R.id.written_samples)
-		{
-			Intent writtenSampIntent = new Intent(this, WrittenSamples.class);
-			startActivity(writtenSampIntent);
-		}
-		*/
 		else
 		{
 			Intent homeIntent = new Intent(this,Scripts_home.class);
