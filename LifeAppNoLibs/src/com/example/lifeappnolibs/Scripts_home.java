@@ -27,8 +27,6 @@ public class Scripts_home extends Activity implements OnClickListener {
 		Button dosAndDontsButton = (Button) findViewById(R.id.dos_and_donts_button);
 		dosAndDontsButton.setOnClickListener(this);
 		
-		Button writtenSampButton = (Button) findViewById(R.id.written_samples);
-		writtenSampButton.setOnClickListener(this);
 	}
 
 	@Override
@@ -62,11 +60,13 @@ public class Scripts_home extends Activity implements OnClickListener {
 			Intent dosAndDontsIntent = new Intent(this,DosAndDontsScript.class);
 			startActivity(dosAndDontsIntent);
 		}
+		/*
 		else if( id == R.id.written_samples)
 		{
 			Intent writtenSampIntent = new Intent(this, WrittenSamples.class);
 			startActivity(writtenSampIntent);
 		}
+		*/
 		else
 		{
 			Intent homeIntent = new Intent(this,Scripts_home.class);

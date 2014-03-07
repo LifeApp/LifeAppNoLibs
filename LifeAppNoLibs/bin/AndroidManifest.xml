@@ -42,6 +42,10 @@
             android:name="com.example.lifeappnolibs.WrittenSamples"
             android:label="@string/title_activity_written_samples" >
         </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.VideoSamples"
+            android:label="@string/title_activity_video_samples" >
+        </activity>
     </application>
 
 </manifest>

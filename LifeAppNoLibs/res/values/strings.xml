@@ -20,5 +20,6 @@
     <string name="title_activity_dos_and_donts_script">Dos And Donts Script</string>
     <string name="title_activity_greetings_script">Greetings Script</string>
     <string name="title_activity_written_samples">Written Samples</string>
+    <string name="title_activity_video_samples">Video Samples</string>
 
 </resources>
