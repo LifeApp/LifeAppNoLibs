@@ -7,41 +7,67 @@ import android.widget.TextView;
 
 public class WrittenSamples extends Activity {
 	
-	private int selectedTab;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
 		setContentView(R.layout.activity_written_samples);
-		this.setText(selectedTab);
+		
+		TextView departuresScripts = (TextView) findViewById(R.id.written_samples_script);
+
+
+		switch(this.getSelectedTab())
+		{
+			case 1:
+				departuresScripts.setText(R.string.sample_script_family);
+				break;
+			case 2:
+				departuresScripts.setText(R.string.sample_script_friends);
+				break;
+			case 3:
+				departuresScripts.setText(R.string.sample_script_new_people);
+				break;
+			case 4:
+				departuresScripts.setText(R.string.sample_script_professionals);
+				break;
+			default:
+				departuresScripts.setText(R.string.sample_script_friends);
+				break;			
+		}	
+		
 	}
 	
 	public void setSelectedTab(int A)
 	{
 		selectedTab = A;
 	}
+	public int getSelectedTab()
+	{
+		return selectedTab;
+	}
 	
-	public void setText(int tab)
+	public void setText()
 	{
 		TextView departuresScripts = (TextView) findViewById(R.id.written_samples_script);
 		
-		switch(tab)
+		switch(selectedTab)
 		{
-			case R.id.family_button:
+			case 1:
 				departuresScripts.setText(R.string.sample_script_family);
 				break;
-			case R.id.friends_button:
+			case 2:
 				departuresScripts.setText(R.string.sample_script_friends);
 				break;
-			case R.id.new_people_button:
+			case 3:
 				departuresScripts.setText(R.string.sample_script_new_people);
 				break;
-			case R.id.professionals_button:
+			case 4:
 				departuresScripts.setText(R.string.sample_script_professionals);
 				break;
 			default:
-				departuresScripts.setText(R.string.sample_script_long);
+				departuresScripts.setText(R.string.sample_script_friends);
 				break;			
-				
 		}		
 	}
 
@@ -51,5 +77,5 @@ public class WrittenSamples extends Activity {
 		getMenuInflater().inflate(R.menu.written_samples, menu);
 		return true;
 	}
-
+	private int selectedTab;
 }

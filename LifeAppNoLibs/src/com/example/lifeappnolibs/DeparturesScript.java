@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 public class DeparturesScript extends Activity implements OnClickListener {
 	
@@ -20,9 +19,7 @@ public class DeparturesScript extends Activity implements OnClickListener {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_departures_script);    
-		
-		
+		setContentView(R.layout.activity_departures_script);	
 		
 		Button writtenSampButton = (Button) findViewById(R.id.written_samples);
 		writtenSampButton.setOnClickListener(this);		
@@ -52,13 +49,12 @@ public class DeparturesScript extends Activity implements OnClickListener {
 	
 	public void onClick(View theView)
 	{	
-		WrittenSamples samp = new WrittenSamples();
-		int selectId = R.id.family_button;
+
+		
 		int id = theView.getId();
 		ImageView departuresBG = (ImageView) findViewById(R.id.departures_background);
 		if (id == R.id.written_samples)
 		{
-			samp.setSelectedTab(selectId);
 			Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
 			startActivity(writtenSampIntent);
 		}
@@ -70,27 +66,28 @@ public class DeparturesScript extends Activity implements OnClickListener {
 		}
 		else if (id == R.id.family_button) 
 		{
-
-			selectId = R.id.family_button;
+			samp.setSelectedTab(1);
 			departuresBG.setImageResource(R.drawable.family);
 		}
 		else if (id == R.id.friends_button) 
 		{
-			selectId = R.id.friends_button;
+			samp.setSelectedTab(2);
 			departuresBG.setImageResource(R.drawable.friends);
 
 		}
 		else if (id == R.id.new_people_button) 
 		{
-			selectId = R.id.new_people_button;
+			samp.setSelectedTab(3);
 			departuresBG.setImageResource(R.drawable.new_people);
 
 		}
 		else if (id == R.id.professionals_button) 
 		{
-			selectId = R.id.professionals_button;
+			samp.setSelectedTab(4);
 			departuresBG.setImageResource(R.drawable.professionals);
 		}		
 	}
+	private int selectId;
+	WrittenSamples samp = new WrittenSamples();
 
 }
