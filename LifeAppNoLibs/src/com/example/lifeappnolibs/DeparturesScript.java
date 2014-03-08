@@ -22,6 +22,8 @@ public class DeparturesScript extends Activity implements OnClickListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_departures_script);    
 		
+		
+		
 		Button writtenSampButton = (Button) findViewById(R.id.written_samples);
 		writtenSampButton.setOnClickListener(this);		
 		
@@ -49,12 +51,14 @@ public class DeparturesScript extends Activity implements OnClickListener {
 	}
 	
 	public void onClick(View theView)
-	{
+	{	
+		WrittenSamples samp = new WrittenSamples();
+		int selectId = R.id.family_button;
 		int id = theView.getId();
 		ImageView departuresBG = (ImageView) findViewById(R.id.departures_background);
-		TextView departuresScripts = (TextView) findViewById(R.id.written_samples_script);
 		if (id == R.id.written_samples)
 		{
+			samp.setSelectedTab(selectId);
 			Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
 			startActivity(writtenSampIntent);
 		}
@@ -66,28 +70,27 @@ public class DeparturesScript extends Activity implements OnClickListener {
 		}
 		else if (id == R.id.family_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
+
+			selectId = R.id.family_button;
 			departuresBG.setImageResource(R.drawable.family);
 		}
 		else if (id == R.id.friends_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
+			selectId = R.id.friends_button;
 			departuresBG.setImageResource(R.drawable.friends);
 
 		}
 		else if (id == R.id.new_people_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
+			selectId = R.id.new_people_button;
 			departuresBG.setImageResource(R.drawable.new_people);
 
 		}
 		else if (id == R.id.professionals_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
+			selectId = R.id.professionals_button;
 			departuresBG.setImageResource(R.drawable.professionals);
-
 		}		
-		
 	}
 
 }

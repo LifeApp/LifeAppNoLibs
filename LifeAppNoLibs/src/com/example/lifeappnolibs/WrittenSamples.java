@@ -6,23 +6,43 @@ import android.view.Menu;
 import android.widget.TextView;
 
 public class WrittenSamples extends Activity {
-
-	WrittenSamples(int A){selectedTab = A;}
 	
 	private int selectedTab;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_written_samples);
-		
+		this.setText(selectedTab);
+	}
+	
+	public void setSelectedTab(int A)
+	{
+		selectedTab = A;
+	}
+	
+	public void setText(int tab)
+	{
 		TextView departuresScripts = (TextView) findViewById(R.id.written_samples_script);
 		
-		switch(selectedTab)
+		switch(tab)
 		{
-		case R.id.family_button:
-			departuresScripts.setText(R.);
-			
-		}
+			case R.id.family_button:
+				departuresScripts.setText(R.string.sample_script_family);
+				break;
+			case R.id.friends_button:
+				departuresScripts.setText(R.string.sample_script_friends);
+				break;
+			case R.id.new_people_button:
+				departuresScripts.setText(R.string.sample_script_new_people);
+				break;
+			case R.id.professionals_button:
+				departuresScripts.setText(R.string.sample_script_professionals);
+				break;
+			default:
+				departuresScripts.setText(R.string.sample_script_long);
+				break;			
+				
+		}		
 	}
 
 	@Override

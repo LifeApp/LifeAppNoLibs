@@ -65,24 +65,20 @@ public class DisagreementsScript extends Activity implements OnClickListener {
 		}
 		else if (id == R.id.family_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.family);
 		}
 		else if (id == R.id.friends_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.friends);
 
 		}
 		else if (id == R.id.new_people_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.new_people);
 
 		}
 		else if (id == R.id.professionals_button) 
 		{
-			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.professionals);
 
 		}		
