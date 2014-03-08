@@ -2,6 +2,7 @@ package com.example.lifeappnolibs;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.view.Menu;
 import android.widget.TextView;
 
@@ -14,10 +15,13 @@ public class WrittenSamples extends Activity {
 		
 		setContentView(R.layout.activity_written_samples);
 		
+		Intent sender = getIntent();
+		int extraData=sender.getExtras().getInt("selectedTab");
+		
 		TextView departuresScripts = (TextView) findViewById(R.id.written_samples_script);
 
 
-		switch(this.getSelectedTab())
+		switch(extraData)
 		{
 			case 1:
 				departuresScripts.setText(R.string.sample_script_family);
