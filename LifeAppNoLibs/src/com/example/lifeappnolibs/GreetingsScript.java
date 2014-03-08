@@ -54,6 +54,7 @@ public class GreetingsScript extends Activity implements OnClickListener{
 		if (id == R.id.written_samples)
 		{
 			Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
+			writtenSampIntent.putExtra("selectedTab", selectId );
 			startActivity(writtenSampIntent);
 		}
 		
@@ -64,24 +65,27 @@ public class GreetingsScript extends Activity implements OnClickListener{
 		}
 		else if (id == R.id.family_button) 
 		{
-			
+			selectId = 1;
 			greetingsBG.setImageResource(R.drawable.family);
 		}
 		else if (id == R.id.friends_button) 
 		{
-			
+			selectId = 2;
 			greetingsBG.setImageResource(R.drawable.friends);
 
 		}
 		else if (id == R.id.new_people_button) 
 		{
+			selectId = 3;
 			greetingsBG.setImageResource(R.drawable.new_people);
 
 		}
 		else if (id == R.id.professionals_button) 
 		{
+			selectId = 4;
 			greetingsBG.setImageResource(R.drawable.professionals);
 
 		}		
 	}
+	private int selectId;
 }
