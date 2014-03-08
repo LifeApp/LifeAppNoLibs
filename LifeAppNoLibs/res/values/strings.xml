@@ -29,6 +29,10 @@
     <string name="title_activity_active_listening">Active Listening</string>
     <string name="title_activity_volume">Volume</string>
     <string name="title_activity_content">Content</string>
+    <string name="sample_script_family">FAMILYThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
+    <string name="sample_script_friends">FRIENDSThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
+    <string name="sample_script_new_people">NEW PEOPLEThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
+   <string name="sample_script_professionals">PROFESSIONALSThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
     <string name="sample_script_long">The best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
 
 </resources>

@@ -53,7 +53,8 @@ public class DisagreementsScript extends Activity implements OnClickListener {
 		ImageView disagreementsBG = (ImageView) findViewById(R.id.disagreements_background);
 		if (id == R.id.written_samples)
 		{
-			Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
+			
+					Intent writtenSampIntent = new Intent(this,WrittenSamples.class);
 			startActivity(writtenSampIntent);
 		}
 		
@@ -64,22 +65,24 @@ public class DisagreementsScript extends Activity implements OnClickListener {
 		}
 		else if (id == R.id.family_button) 
 		{
-			
+			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.family);
 		}
 		else if (id == R.id.friends_button) 
 		{
-			
+			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.friends);
 
 		}
 		else if (id == R.id.new_people_button) 
 		{
+			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.new_people);
 
 		}
 		else if (id == R.id.professionals_button) 
 		{
+			WrittenSamples samp = new WrittenSamples(id);
 			disagreementsBG.setImageResource(R.drawable.professionals);
 
 		}		
