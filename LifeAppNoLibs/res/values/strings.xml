@@ -32,7 +32,58 @@
     <string name="sample_script_family">FAMILYThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
     <string name="sample_script_friends">FRIENDSThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
     <string name="sample_script_new_people">NEW PEOPLEThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
-   <string name="sample_script_professionals">PROFESSIONALSThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
+    <string name="sample_script_professionals">PROFESSIONALSThe best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
     <string name="sample_script_long">The best way to say something is neato, awesome, or swell. The phrase cool is very relaxed, never goes out of style, and people will never laugh at you for using it, very conveniant for people like me who dont care about whats in</string>
+    <string name="title_activity_what_is_it">WhatIsIt</string>
+    <string name="title_activity_scripts">Scripts</string>
+    <string name="title_activity_videos">Videos</string>
+    <string name="title_activity_how_do_iactively_listen">HowDoIActivelyListen</string>
+    <string name="title_activity_video_clips">VideoClips</string>
+    <string name="title_activity_its_all_about_balance">ItsAllAboutBalance</string>
+    <string name="title_activity_volume_video_clips">VolumeVideoClips</string>
+    <string name="title_activity_whats_inappropriate">WhatsInappropriate</string>
+    <string name="title_activity_content_video_clips">ContentVideoClips</string>
 
+   <string name="scripts_data">\nIf someone asks\n
+		How are you?\n
+		What are your plans for the weekend?\n
+		What’s new?\n
+		How was your week?\n\n
+	    It’s polite to ask them the same question back
+</string> 
+    
+    <string name="active_listening_data">\nWhat is active listening\n\n
+		•	Active Listening is a communication technique that allows the speaker to know the listener is paying attention and comprehending what he/she is hearing.
+</string> 
+    
+    <string name="how_do_i_listen_data">\nHow do I actively listen\n\n
+•	Don’t:  text, play video games, read  or do other distracting activities that will interfere with eye contact
+\n•	Do: ask questions for more infomration or clarifiaction
+
+		
+</string> 
+    
+    <string name="its_all_balance_data">\n•	Don’t talk loudly- this makes the listener uncomfrtable
+\n•	Don’t talk softly- this makes it difficult for the listener to understand what you are saying
+
+</string> 
+    
+    
+  <string name="inapp_content_data">
+	\nThe following make people uncofrotable, upset, and even agnry:\n\n
+•	Asking personal questions\n
+•	Sharing  inapropriate personal information\n
+•	Bringing up innapropriate topics- religion, politics, controversial social issues
+\n•	Using innapropriate language
+	
+</string> 
+    
+    
+    
+    
+    
+    
+    
+    
+    
 </resources>

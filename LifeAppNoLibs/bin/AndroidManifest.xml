@@ -12,7 +12,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Sherlock" >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.example.lifeappnolibs.Scripts_home"
             android:label="@string/app_name" >
@@ -62,5 +62,42 @@
             android:name="com.example.lifeappnolibs.Content"
             android:label="@string/title_activity_content" >
         </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.WhatIsIt"
+            android:label="@string/title_activity_what_is_it" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.Scripts"
+            android:label="@string/title_activity_scripts" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.Videos"
+            android:label="@string/title_activity_videos" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.HowDoIActivelyListen"
+            android:label="@string/title_activity_how_do_iactively_listen" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.VideoClips"
+            android:label="@string/title_activity_video_clips" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.ItsAllAboutBalance"
+            android:label="@string/title_activity_its_all_about_balance" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.VolumeVideoClips"
+            android:label="@string/title_activity_volume_video_clips" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.WhatsInappropriate"
+            android:label="@string/title_activity_whats_inappropriate" >
+        </activity>
+        <activity
+            android:name="com.example.lifeappnolibs.ContentVideoClips"
+            android:label="@string/title_activity_content_video_clips" >
+        </activity>
     </application>
+
 </manifest>

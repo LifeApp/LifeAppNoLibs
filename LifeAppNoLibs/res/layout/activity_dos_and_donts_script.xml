@@ -18,7 +18,7 @@
             android:layout_gravity="center"
     		android:adjustViewBounds="true"                    
             android:contentDescription="@+string/conversation_dos_and_donts_picture"
-            android:background="@drawable/dos_and_donts">            
+            android:background="@drawable/dosanddonts">            
         </ImageView>        
         
      </LinearLayout>        
@@ -37,36 +37,47 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:weightSum = "2">
-                
-                <Button
-                    android:id="@+id/asking_qs"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/asking_questions_button" />
-                <Button  
-                    android:id = "@+id/active_listening"
-                    android:layout_width="fill_parent"                                      
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/active_listening_button" />  
-                    
-                <Button  
-                    android:id = "@+id/volume"
-                    android:layout_width="fill_parent"                                      
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/volume_button" />  
-                    
-                <Button  
-                    android:id = "@+id/content"
-                    android:layout_width="fill_parent"                                      
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="@string/content_button" />                  
+                android:weightSum = "2">                  
                                                                       
             </LinearLayout>            
-        </ScrollView>        
+        </ScrollView>
+
+        <Button
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:text="@string/content_button" />
+
+        <Button
+            android:id="@+id/volume"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="19dp"
+            android:layout_weight="1"
+            android:text="@string/volume_button" />
+
+        <android.widget.Button
+            android:id="@+id/active_listening"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/volume"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:text="@string/active_listening_button" />
+
+        <android.widget.Button
+            android:id="@+id/asking_qs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="1"
+            android:text="@string/asking_questions_button" />
+        
     </RelativeLayout>    
 </LinearLayout>
